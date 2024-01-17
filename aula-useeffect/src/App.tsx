@@ -13,10 +13,11 @@ function App() {
   useEffect(() => {
     console.log("PASSOU NO useEffect")
     setProd(findProduct(productId));
-  }, []);
+  }, [productId]);
 
   function handleClick(){
-    console.log("PASSOU NO handleClick")
+    console.log("PASSOU NO handleClick");
+    setProductId(2);
   }
 
   return (
